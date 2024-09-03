@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: rgb(53, 136, 224);
+    background-image: url(/html/library.jpg);
+    color: rgb(131, 86, 86);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat;
+   
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgb(97, 47, 38);
+    color: rgb(248, 248, 248);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: rgb(93, 93, 93);
+    margin-bottom: 20px;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Stretch buttons to full width of container */
+    margin-top: 20px;
+    width: 100%; /* Ensure it takes up full width of container */
+}
+
+.answer-btn {
+    display: block;
+    width: 100%; /* Full width of parent container */
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color:rgb(121, 80, 73);
+    color:rgb(186, 170, 166);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.answer-btn:hover {
+    background-color: rgb(143, 110, 101);
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Status colors */
+.correct {
+    color: lightgreen;
+}
+
+.wrong {
+    color: lightcoral;
+}
+
+.info {
+    color: lightblue;
+}
